@@ -298,7 +298,8 @@ function blogBlog2(blogginOut) {
   div2.appendChild(p12);
 }
 
-// all blogs loop
+/* figure out how to DRY the blog code */
+
 // function blogBlog2(blogginOut) {
 //   const blog2 = blogsArray[2];
 
@@ -373,11 +374,6 @@ $(function () {
   alert(`Thank you. ${adopter.name} \nThe form information has been received`);
   });
 });
-
-
-
-
-
 
 
 
