@@ -1,8 +1,11 @@
-//
+/* clicking on the dogs image creates an alert on screen that tells the 
+name, breed, and fee to adopt that specific dog */
 function infoAboutDogs(name, breed, fee) {
   alert(`name: ${name} \nbreed: ${breed} \nfee: ${fee}`);
 }
 
+/* updates the current total cost of items in the cart and creates 
+a pop-up that notifies the user each time */
 let currentTotal = 0;
 
 function runningTotal(fee) {
@@ -15,7 +18,9 @@ function runningTotal(fee) {
 }
 
 /*-------------------------------------
-Dog card hover with delay  
+Dog card hover with delay 
+- On mobile, reduces the color intensity of all other dog images 
+except the one that was clicked
 -------------------------------------*/
 $(function () {
   $("#murphy")
@@ -125,7 +130,9 @@ $(function () {
     });
 });
 
-/*--------------Blogs---------------*/
+/*-------------------------------------
+Blogs 
+-------------------------------------*/
 let blogsArray = [
   {
     image: "images/blog-1.jpeg",
@@ -290,8 +297,6 @@ $(function () {
     };
     console.log(adopter);
 
-    alert(
-      `Thank you. ${adopter.name} \nThe form information has been received`
-    );
+    alert(`Thank you ${adopter.name} \nThe form information has been received`);
   });
 });
