@@ -1,3 +1,4 @@
+//
 function infoAboutDogs(name, breed, fee) {
   alert(`name: ${name} \nbreed: ${breed} \nfee: ${fee}`);
 }
@@ -13,50 +14,9 @@ function runningTotal(fee) {
   alert(`Your current total is $${carts}`);
 }
 
-/*-------------Index----------------*/
-
-// let dogCards = [
-//   'murphy',
-//   'poppy',
-//   'jack',
-//   'duffy',
-//   'lucas',
-//   'jake',
-//   'angus',
-//   'violet',
-//   'piper',
-//   'maximus',
-//   'luna',
-//   'stella',
-// ]
-
-// dogCards.forEach(function(learning) {
-//   let practice = dogCards.indexOf(learning);
-//   let more = `${practice}, ${learning}`;
-//   console.log(more);
-// })
-
-let dogCards = [
-  { image: "murphy" },
-  { image: "poppy" },
-  { image: "jack" },
-  { image: "duffy" },
-  { image: "lucas" },
-  { image: "jake" },
-  { image: "angus" },
-  { image: "violet" },
-  { image: "piper" },
-  { image: "maximus" },
-  { image: "luna" },
-  { image: "stella" },
-];
-
-$(function () {
-  $.each(dogCards, function (index, val) {
-    console.log(index, val.image);
-  });
-});
-
+/*-------------------------------------
+Dog card hover with delay  
+-------------------------------------*/
 $(function () {
   $("#murphy")
     .mouseenter(function () {
@@ -187,7 +147,9 @@ let blogsArray = [
   },
 ];
 
-/*------------First blog post----------*/
+/*-------------------------------------
+First blog post  
+-------------------------------------*/
 function blogBlog0(blogginOut) {
   const blog0 = blogsArray[0];
 
@@ -227,7 +189,9 @@ function blogBlog0(blogginOut) {
   div0.appendChild(p10);
 }
 
-/*------------Second blog post----------*/
+/*-------------------------------------
+Second blog post  
+-------------------------------------*/
 function blogBlog1(blogginOut) {
   const blog1 = blogsArray[1];
 
@@ -267,7 +231,9 @@ function blogBlog1(blogginOut) {
   div1.appendChild(p11);
 }
 
-/*------------Third blog post----------*/
+/*-------------------------------------
+Third blog post  
+-------------------------------------*/
 function blogBlog2(blogginOut) {
   const blog2 = blogsArray[2];
 
@@ -307,49 +273,9 @@ function blogBlog2(blogginOut) {
   div2.appendChild(p12);
 }
 
-/* figure out how to DRY the blog code */
-
-// function blogBlog2(blogginOut) {
-//   const blog2 = blogsArray[2];
-
-//   const gridContainer[i] = document.createElement('div');
-//   const section[i] = document.createElement('section');
-//   const image[i] = document.createElement('img');
-//   const div[i] = document.createElement('div');
-//   const heading[i] = document.createElement('h4');
-//   const p[i] = document.createElement('p');
-//   const p[i] = document.createElement('p');
-
-//   gridContainer[i].setAttribute('id', 'grid-container');
-//   section[i].setAttribute('id', 'blogPost2');
-//   heading[i].setAttribute('id', 'heading2');
-//   p[i].setAttribute('id', 'p[i]');
-//   p[i+1].setAttribute('id', 'p[i+1]');
-
-//   image[i].src = blog[i].image;
-
-//   heading[i].textContent = blog2.heading;
-//   p[i].textContent = blog2.p0;
-//   p[i+1].textContent = blog2.p1;
-
-//   gridContainer2.classList.add('grid-container')
-//   section2.classList.add('blog-grid-3-js');
-//   div2.classList.add('blog');
-//   heading2.classList.add('h4-blog');
-//   p02.classList.add('blog-p');
-//   p12.classList.add('blog-p');
-
-//   document.body.appendChild(gridContainer2);
-//   gridContainer2.appendChild(section2);
-//   section2.appendChild(image2);
-//   section2.appendChild(div2);
-//   div2.appendChild(heading2);
-//   div2.appendChild(p02);
-//   div2.appendChild(p12);
-// }
-
-/*--------------Checkout--------------*/
-
+/*-------------------------------------
+Checkout
+-------------------------------------*/
 $(function () {
   $("form").on("submit", function (event) {
     const adopter = {
